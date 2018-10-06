@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Коллекции хештегов</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="gen.js"></script>
+	<script type="text/javascript" src="jquery.cookie-1.4.1.min.js"></script>
+</head>
+<body>
+	<table class="main_table">
+		<tr>
+			<td colspan="2">
+				<h3>Введите теги:</h3>
+			</td>
+		</tr>
+		<tr>
+			<td class="name">Тег навигации 1: </td>
+			<td><input type="text" class="tag nav" id="tag1" autocomplete="on"></td>
+		</tr>
+		<tr>
+			<td class="name">Тег навигации 2:</td>
+			<td><input type="text" class="tag nav" id="tag2" autocomplete="on"></td>
+		</tr>
+		<tr>
+			<td class="name">Тег навигации 3:</td>
+			<td><input type="text" class="tag nav" id="tag3" autocomplete="on"></td>
+		</tr>
+		<tr>
+			<td class="name">Поисковый тег 1:</td>
+			<td><input type="text" class="tag ser" id="tag4" autocomplete="on"></td>
+		</tr>
+		<tr>
+			<td class="name">Поисковый тег 2:</td>
+			<td><input type="text" class="tag ser" id="tag5" autocomplete="on"></td>
+		</tr>
+		<tr>
+			<td class="name">Поисковый тег 3:</td>
+			<td><input type="text" class="tag ser" id="tag6" autocomplete="on"></td>
+		</tr>
+		<tr>
+			<td class="name">Поисковый тег 4:</td>
+			<td><input type="text" class="tag ser" id="tag7" autocomplete="on"></td>
+		</tr>
+		<tr>
+			<td class="name">Поисковый тег 5:</td>
+			<td><input type="text" class="tag ser"  id="tag8" autocomplete="on"></td>
+		</tr>
+		<tr>
+			<td class="name">Поисковый тег 6:</td>
+			<td><input type="text" class="tag ser" id="tag9" autocomplete="on"></td>
+		</tr>
+		<tr>
+			<td class="name">Поисковый тег 7:</td>
+			<td><input type="text" class="tag ser"  id="tag10" autocomplete="on"></td>
+		</tr>
+	</table>
+
+<table class="main_table">
+	<tr>
+		<td style="position: relative;">
+			<h3>Хештег раздел:</h3>
+			<textarea name="" id="result1" class="result" rows="8" readonly="true"></textarea>
+			<textarea name="" id="result2" class="result" rows="6" readonly="true" hidden="true"></textarea>
+			<br>
+			<input id="clearbut" type="button" value="Очистить теги" onclick="clear_all()">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<h3>Частые теги:</h3>
+			<div id="best-tags"></div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<h3>Настройки:</h3>
+			<div class="block">
+			Граница: <input type="text" id="border" tabindex="-1">
+			Разделитель: <input type="text" id='spacer' tabindex="-1">
+			Обложка навигации: <input type="text" id='nav1' tabindex="-1"><input type="text" id='nav2' tabindex="-1">
+			<br>
+			Ссылка группы: <input type="text" id='link' tabindex="-1">
+			</div>
+		</td>
+	</tr>
+</body>
+</html>
